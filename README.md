@@ -1,2 +1,3 @@
 # jvanderhorst.github.io
-Personal Portfolio
+# Personal Portfolio
+Johnny Vanderhorst
