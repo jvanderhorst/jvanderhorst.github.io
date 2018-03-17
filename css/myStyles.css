@@ -1,0 +1,47 @@
+.bgimage {
+    width: 100%;
+    height: 900px;
+    background: url(/images/BFV_slim.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 7.5em;
+}
+
+.hero-text p {
+    font-size: 2.5em;
+}
+
+section {
+    padding: 50px 0 50px 0;
+}
+
+.socialNavBar {
+    display: inline-block;
+}
+
+.socialNavBar i {
+    padding: 0 50px 0 0;
+}
+
+.project-wrapper {
+    background-color: #D1EFFC;
+}
+
+footer {
+    background-color: #D1EFFC;
+}
+
