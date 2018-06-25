@@ -1,24 +1,7 @@
-/* Navigation */
-
-.navbar {
-    background-color: #f2f2f3;
-}
-
-.navbar li a {
-    color: #595247;
-}
-
-.navbar li a:hover {
-    background-color: #595247;
-    color: #f2f2f3;
-}
-
-/* Hero Image */
-
 .bgimage {
     width: 100%;
     height: 900px;
-    background:  url(/images/BFV_slim.png);
+    background: url(/images/BFV_slim.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -110,10 +93,7 @@ section {
 
 /* About Section */
 
-.progress-bar {
-    color: #f2f2f3;
-    background-color: #173158;
-}
+
 
 /* Footer */
 
@@ -141,13 +121,5 @@ footer {
 
 .socialNavBar a:hover {
     color: #173158;
-}
-
-video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    padding-top: 50px;
 }
 

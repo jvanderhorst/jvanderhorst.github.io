@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Johnny Vanderhorst</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/myStyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+    <link href="/css/myStyles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
-    <script src="js/myScripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="/scripts/myScripts.js"></script>
 </head>
 
 <body>
     <!-- Main Body -->
-    
+
     <!-- Hero Image -->
     <div class="bgimage">
         <div class="bgimage-layer">
@@ -32,24 +33,24 @@
         </div>
     </div>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar navbar-fixed-top">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#about">About<span class="sr-only"></span></a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects<span class="sr-only"></span></a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact<span class="sr-only"></span></a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="web-335/vanderhorst-diagrams.html">Diagrams<span class="sr-only"></span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vanderhorst-diagrams.html">Diagrams<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Presentations</a>
@@ -57,7 +58,8 @@
                             <a class="dropdown-item" href="/web-420/vanderhorst-rest.html">REST</a>
                             <a class="dropdown-item" href="/web-420/vanderhorst-hypermedia-design.html">Hyper Media</a>
                             <a class="dropdown-item" href="/web-420/vanderhorst-soa.html">SOA</a>
-        </div>
+                            <a class="dropdown-item" href="/web-420/vanderhorst-microservices.html">Microservices</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -75,147 +77,142 @@
             </div>
         </div>
 
+
+
+
+        >
+
+        <br><br>
+        <br><br>
         <div class="container mt-2">
 
-            <br><br>
-            <br><br>
-
             <div class="row">
-                <a href="https://jvanderhorst.github.io/bioSite/">
-                <div class="project-container col-md-4 col-12">
-                    <img src="images/biosite.jpg" class="project-image" alt="BioSite preview">
-                    <div class="overlay">
-                        <div class="media-body1">
-                            <h4>BioSite</h4>
-                            <p>The BioSite project required us to create a bio website, about someone we know. I chose my 17 year old son. The site briefly describes him and his interests.</p>
+                <div class="col-sm">
+                    <a href="https://jvanderhorst.github.io/bioSite/">
+                        <div class="project-container">
+                            <img src="/images/bioSite_image.png" class="project-image" alt="BioSite preview">
+                            <div class="overlay">
+                                <div class="media-body1">
+                                    <h4>BioSite</h4>
+                                    <p>The BioSite project required us to create a bio website, about someone we know. I chose my 17 year old son. The site briefly describes him and his interests.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
-                <a href="https://github.com/jvanderhorst/web-230">
-                <div class="project-container col-md-4 col-12">
-                    <img src="images/web230.jpg" class="project-image" alt="Generic placeholder image">
-                    <div class="overlay">
-                        <div class="media-body1">
-                            <h4>WEB230 GitHub Repository</h4>
-                            <p>This GitHub repository holds the projects and assignments from the Introduction to JavaScript course.</p>
+
+                <div class="col-sm">
+                    <a href="https://github.com/jvanderhorst/web-230">
+                        <div class="project-container">
+                            <img src="/images/web230.jpg" class="project-image" alt="Generic placeholder image">
+                            <div class="overlay">
+                                <div class="media-body1">
+                                    <h4>WEB230 GitHub Repository</h4>
+                                    <p>This GitHub repository holds the projects and assignments from the Introduction to JavaScript course.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+
+                    </a>
                 </div>
-                </a>
-                <a href="https://github.com/jvanderhorst/jvanderhorst.github.io/tree/master/portfolio-project">
-                <div class="project-container col-md-4 col-12">
-                    <img src="images/port.jpg" class="project-image" alt="Generic placeholder image">
-                    <div class="overlay">
-                        <div class="media-body1">
-                            <h4>Portfolio Prototype</h4>
-                            <p>This GitHub repository holds the sketches and prototypes I used to build this portfolio website.</p>
+
+                <div class="col-sm">
+                    <a href="https://github.com/jvanderhorst/jvanderhorst.github.io/tree/master/portfolio-project">
+                        <div class="project-container">
+                            <img src="/images/port.jpg" class="project-image" alt="Generic placeholder image">
+                            <div class="overlay">
+                                <div class="media-body1">
+                                    <h4>Portfolio Prototype</h4>
+                                    <p>This GitHub repository holds the sketches and prototypes I used to build this portfolio website.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
             </div>
 
+
             <br><br>
 
             <div class="row">
-                <a href="https://github.com/jvanderhorst/web-330">
-                <div class="project-container col-md-4 col-12">
-                    <img src="images/web330.jpg" class="project-image" alt="Generic placeholder image">
-                    <div class="overlay">
-                        <div class="media-body1">
-                            <h4>WEB330 GitHub Repository</h4>
-                            <p>This GitHub repository holds the projects and assignments from the Enterprise JavaScript II course.</p>
+                <div class="col-sm">
+                    <a href="https://github.com/jvanderhorst/web-330">
+                        <div class="project-container">
+                            <img src="/images/web330.jpg" class="project-image" alt="Generic placeholder image">
+                            <div class="overlay">
+                                <div class="media-body1">
+                                    <h4>WEB330 GitHub Repository</h4>
+                                    <p>This GitHub repository holds the projects and assignments from the Enterprise JavaScript II course.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
-                <a href="https://github.com/jvanderhorst/web-340">
-                <div class="project-container col-md-4 col-12">
-                    <img src="images/web340.jpg" class="project-image" alt="Generic placeholder image">
-                    <div class="overlay">
-                        <div class="media-body1">
-                            <h4>WEB340 GitHub Repository</h4>
-                            <p>This GitHub repository holds the projects and assignments from the Node.js course.</p>
+                <div class="col-sm">
+                    <a href="https://github.com/jvanderhorst/web-340">
+                        <div class="project-container">
+                            <img src="/images/web340.jpg" class="project-image" alt="Generic placeholder image">
+                            <div class="overlay">
+                                <div class="media-body1">
+                                    <h4>WEB340 GitHub Repository</h4>
+                                    <p>This GitHub repository holds the projects and assignments from the Node.js course.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
-                <a href="https://johnnyvanderhorst.myportfolio.com/">
-                <div class="project-container col-md-4 col-12">
-                    <img src="images/gd-portfolio.jpg" class="project-image" alt="Generic placeholder image">
-                    <div class="overlay">
-                        <div class="media-body1">
-                            <h4>Graphic Design Portfolio</h4>
-                            <p>Graphic design is how I got interested in web development, this portfolio highlights some of my projects as a graphic design student.</p>
+                <div class="col-sm">
+                    <a href="https://johnnyvanderhorst.myportfolio.com/">
+                        <div class="project-container">
+                            <img src="/images/gd-portfolio.jpg" class="project-image" alt="Generic placeholder image">
+                            <div class="overlay">
+                                <div class="media-body1">
+                                    <h4>Graphic Design Portfolio</h4>
+                                    <p>Graphic design is how I got interested in web development, this portfolio highlights some of my projects as a graphic design student.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
             </div>
         </div>
+
     </section>
 
     <hr>
     <!-- About Section -->
-    <section id="about">
-        <div id="about" class="container">
-            <div id="projects" class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1>About</h1>
-                    </div>
-                    <br><br>
-                </div>
-            </div>
+    <section class="container mt-2" id="about">
+
+        <div id="projects" class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="profilePhoto">
-                        <img src="images/johnny.jpg" class="img-responsive img-rounded"> </div>
+                <div class="col-12 text-center">
+                    <h1>About</h1>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <h1>Johnny Vanderhorst</h1>
-                    <h3> WEB DEVELOPER DESIGNER</h3>
-                    <hr>
-                    <p>In 2014, I retired from the Army, not sure what I wanted to do; I pursued a degree in Graphic Design. I enjoyed the different projects, but the web projects I enjoyed the most and found the most challenging. That experience led me to pursue an education in web development. It has been a challenge learning the new concepts, but it’s very rewarding when you figure it out. I'm exciting about learning more about web development and look forward to a career in web development and design.</p>
-                </div>
+                <br><br>
             </div>
         </div>
-    </section>
 
-    <section>
-        <div class="container">
-            <div id="skills" class="row">
-                <div class="col-md-8 col-sm-12">
-                    <h2>Skills</h2>
-                    <hr>
+        <div class="row">
 
-                    <p>I have experinece usisng various web development and design tools. </p>
 
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h2>Tools</h2>
-                    <hr>
-                    <div class="progress mt-4">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"> HTML</div>
-                    </div>
-                    <div class="progress mt-4">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> CSS</div>
-                    </div>
-                    <div class="progress mt-4">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> JAVASCRIPT</div>
-                    </div>
+            <div class="col-l">
+                <div id="" class=""><img src="/images/johnny.jpg" width="200px" align=""></div>
+            </div>
 
-                    <div class="progress mt-4">
-                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> PHOTOSHOP</div>
-                    </div>
-                    <div class="progress mt-4">
-                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 90%"> ILLUSTRATOR</div>
-                    </div>
+            <div class="col-md">
+                <div class="aboutContent">
+                    <p class="align-middle" id="aboutText">In 2014, I retired from the Army, not sure what I wanted to do; I pursued a degree in Graphic Design. I enjoyed the different projects, but the web projects I enjoyed the most and found the most challenging. That experience led me to pursue an education in web development. It has been a challenge learning the new concepts, but it’s very rewarding when you figure it out. I'm exciting about learning more about web development and look forward to a career in web development and design.</p>
                 </div>
             </div>
+
         </div>
+        
+
+
+
     </section>
+
+
     <!-- Footer with contact information -->
     <footer>
         <section>
