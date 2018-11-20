@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Johnny Vanderhorst</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--<link href="css/bootstrap.css" rel="stylesheet">-->
     <link href="/css/myStyles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
@@ -19,426 +21,115 @@
 </head>
 
 <body>
-
-<!-- Navigation Bar -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/web-335/vanderhorst-diagrams.html">Diagrams<span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RESTful Presentations</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/web-420/vanderhorst-rest.html">REST</a>
-                        <a class="dropdown-item" href="/web-420/vanderhorst-restful-apis.html">RESTful APIs</a>
-                        <a class="dropdown-item" href="/web-420/vanderhorst-soap-apis.html">SOAP</a>
-                        <a class="dropdown-item" href="/web-420/vanderhorst-json-apis.html">JSON</a>
-                        <a class="dropdown-item" href="/web-420/vanderhorst-hypermedia-design.html">Hyper Media</a>
-                        <a class="dropdown-item" href="/web-420/vanderhorst-soa.html">SOA</a>
-                        <a class="dropdown-item" href="/web-420/vanderhorst-microservices.html">Microservices</a>
-                        <a class="dropdown-item" href="/web-420/vanderhorst-oath-security.html">OAuth</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DevOps Presentations</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/web-430/vanderhorst-tech-value-stream.html">Value Stream</a>
-                        <a class="dropdown-item" href="/web-430/vanderhorst-two-pizza-rule.html">Two-Pizza Rule</a>
-                        <a class="dropdown-item" href="/web-430/vanderhorst-automated-tests.html">Automated Tests</a>
-                        <a class="dropdown-item" href="/web-430/vanderhorst-ci.html">Continuous Integration</a>
-                        <a class="dropdown-item" href="/web-430/vanderhorst-pager-rotation.html">Pager Rotation</a>
-                        <a class="dropdown-item" href="/web-430/vanderhorst-ca-processes.html">Change Approval</a>
-                        <a class="dropdown-item" href="/web-430/vanderhorst-it-vs-business.html">IT vs Business</a>
-                        <a class="dropdown-item" href="/web-430/vanderhorst-source-control-security.html">Source Control Security</a>
-                        <a class="dropdown-item" href="/web-430/vanderhorst-change-management.html">Change Management</a>
-                        
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-   <!-- Diagram Section -->
-   <section class="project-wrapper">
-    <div id="diagrams" class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>Diagrams</h1>
-                <p>Below are object relational diagrams, NoSQL data structures and NoSQL document diagrams.
-                </p>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/web-335/vanderhorst-diagrams.html">Diagrams</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RESTful Presentations</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/web-420/vanderhorst-rest.html">REST</a>
+                            <a class="dropdown-item" href="/web-420/vanderhorst-restful-apis.html">RESTful APIs</a>
+                            <a class="dropdown-item" href="/web-420/vanderhorst-soap-apis.html">SOAP</a>
+                            <a class="dropdown-item" href="/web-420/vanderhorst-hypermedia-design.html">Hyper Media</a>
+                            <a class="dropdown-item" href="/web-420/vanderhorst-soa.html">SOA</a>
+                            <a class="dropdown-item" href="/web-420/vanderhorst-microservices.html">Microservices</a>
+                            <a class="dropdown-item" href="/web-420/vanderhorst-oath-security.html">OAuth</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DevOps Presentations</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/web-430/vanderhorst-tech-value-stream.html">Value Stream</a>
+                            <a class="dropdown-item" href="/web-430/vanderhorst-two-pizza-rule.html">Two-Pizza Rule</a>
+                            <a class="dropdown-item" href="/web-430/vanderhorst-automated-tests.html">Automated Tests</a>
+                            <a class="dropdown-item" href="/web-430/vanderhorst-ci.html">Continuous Integration</a>
+                            <a class="dropdown-item" href="/web-430/vanderhorst-pager-rotation.html">Pager Rotation</a>
+                            <a class="dropdown-item" href="/web-430/vanderhorst-ca-processes.html">Change Approval</a>
+                            <a class="dropdown-item" href="/web-430/vanderhorst-it-vs-business.html">IT vs Business</a>
+                            <a class="dropdown-item" href="/web-430/vanderhorst-source-control-security.html">Source Control Security</a>
+                            <a class="dropdown-item" href="/web-430/vanderhorst-change-management.html">Change Management</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="container">
-
-        <br><br>
-        <br><br>
-
-        <div class="row">
-
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-1.4-ORD.png" data-toggle="modal" data-target="#OrdModal">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-1.4-ORD.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 1.4 ORD</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 1.4 ORD</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-1.4-ORD.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
+    <!-- main page content -->
+    <div class="diagram">
+        <div class="container">
+            <h2>Diagrams</h2>
+            <p>Object relational diagrams, NoSQL data structures and NoSQL document diagrams coursework</p>
+            <div class="card w-50">
+                <div class="card-body">
+                    <h5 class="card-title">WEB335 - Assignment 1.4 ORD</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <!--modal trigger-->
+                    <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#diaModalOne">View</a>
                 </div>
             </div>
 
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-1.4-data-structure.png" data-toggle="modal" data-target="#OrdModal2">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-1.4-data-structure.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 1.4 NoSQL Data Structure</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- Modal -->
+            <div class="modal fade" id="diaModalOne" tabindex="-1" role="dialog" aria-labelledby="diaModalOneLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 1.4 NoSQL Data Structure</h5>
+                            <h5 class="modal-title" id="diaModalOneLabel">WEB335 - Assignment 1.4 ORD</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+          <span aria-hidden="true">&times;</span>
+        </button>
                         </div>
                         <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-1.4-data-structure.png" alt="BioSite preview">
+                            <img src="/nosql-data-diagrams/vanderhorst-1.4-ORD.png" >
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-2.2-ORD.png" data-toggle="modal" data-target="#OrdModal3">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-2.2-ORD.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 2.2 ORD</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 2.2 ORD</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-2.2-ORD.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-2.2-data-structure.png" data-toggle="modal" data-target="#OrdModal4">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-2.2-data-structure.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 2.2 NoSQL Data Structure</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 2.2 NoSQL Data Structure</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-2.2-data-structure.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-2.3-ORD.png" data-toggle="modal" data-target="#OrdModal5">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-2.3-ORD.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 2.3 ORD</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 2.3 ORD</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-2.3-ORD.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-2.3-data-structure.png" data-toggle="modal" data-target="#OrdModal6">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-2.3-data-structure.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 2.3 NoSQL Data Structure</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 2.3 NoSQL Data Structure</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-2.3-data-structure.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-3.2-ORD.png" data-toggle="modal" data-target="#OrdModal7">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-3.2-ORD.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 3.2 ORD</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 3.2 ORD</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-3.2-ORD.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-3.2-data-structure.png" data-toggle="modal" data-target="#OrdModal8">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-3.2-data-structure.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 3.2 NoSQL Data Structure</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 3.2 NoSQL Data Structure</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-3.2-data-structure.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-3.3-ORD.png" data-toggle="modal" data-target="#OrdModal9">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-3.3-ORD.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 3.3 ORD</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 3.3 ORD</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-3.3-ORD.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-3.3-NoSQL-document-diagram.png" data-toggle="modal" data-target="#OrdModal10">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-3.3-NoSQL-document-diagram.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 3.3 NoSQL Document Diagram</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 3.3 NoSQL Document Diagram</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-3.3-NoSQL-document-diagram.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail col-md-4 col-12">
-                <a href="/nosql-data-diagrams/vanderhorst-3.3-data-structure.png" data-toggle="modal" data-target="#OrdModal11">
-                    <div class="modal-content"><img src="/nosql-data-diagrams/vanderhorst-3.3-data-structure.png" class="diagram-img" alt="BioSite preview"></div>
-
-                    <div class="caption">
-                        <p>WEB335 - Assignment 3.3 NoSQL Data Structure</p>
-
-                    </div>
-                </a>
-            </div>
-            <div class="modal fade" id="OrdModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">WEB335 - Assignment 3.3 NoSQL Data Structure</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="/nosql-data-diagrams/vanderhorst-3.3-data-structure.png" alt="BioSite preview">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <br><br>
-
-
-
-        <br><br>
-
-    </div>
-    <br><br>
-
-
-</section>
-<br><br>
- <!-- Footer with contact information -->
- <footer>
-    <section>
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <h2>GET IN TOUCH</h2>
-                    <div class="socialNavBar">
-                        <a href="mailto:johnnyrvanderhorst@gmail.com"><i class="fa fa-envelope" style="font-size:36px"></i></a>
-                        <a href="#"><i class="fa fa-behance" style="font-size:36px"></i></a>
-                        <a href="#"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
-                        <a href="#"><i class="fa fa-instagram" style="font-size:36px"></i></a>
-                        <a href="#"><i class="fa fa-github" style="font-size:36px"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</footer>
+    </div>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-title">
+                    <h3><strong>Contact Me</strong></h3>
+                </div>
+                <div class="social-icons">
+                    <a href="mailto:johnnyrvanderhorst@gmail.com.com?Subject=Hello">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true" style="font-size:36px"></i>
+                    </a>
+                    <a href="https://github.com/jvanderhorst" target="_blank">
+                        <i class="fa fa-github fa-2x" aria-hidden="true" style="font-size:36px"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/johnnyrvanderhorstjr/" target="_blank">
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="font-size:36px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
 
 </body>
 
